@@ -1,0 +1,132 @@
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainblock {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 750px;
+}
+
+.mainblock-header {
+    color:#fff;
+    padding: 15px;
+    background: #ff8663;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.mainblock-close-icon {
+    float: right;
+    cursor: pointer;
+}
+
+.mainblock-inputs-row {
+    background: #f0f0f0;
+    padding: 10px 15px;
+}
+
+.mainblock-inputs-row input {
+    width:260px;
+    padding: 10px;
+    border-radius: 20px;
+    border:none;
+    outline: none;
+}
+
+.input-name {
+    float: left;
+}
+
+.input-other {
+    float: right;
+}
+.zone-caption-wrapper {
+    display: flex;
+}
+
+.zone-caption {
+    color:#4f4f4f;
+    border-bottom: 2px solid #f0f0f0;
+    width: 50%;
+    padding: 10px 15px;
+}
+
+.zone-wrapper {
+    display: flex;
+    height:400px;
+}
+
+.mainblock-zone {
+    width: 50%;
+    padding: 15px;
+    overflow-y: scroll;
+}
+
+.zone-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 325px;
+}
+
+.zone-link {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.icon-rotate .zone-link-add {
+    transform: rotate(45deg);
+    top:25px;
+}
+
+.zone-link-photo {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+
+.zone-link-name {
+    padding-left: 8px;
+    color:#4f4f4f;
+}
+
+.zone-link-add {
+    position: absolute;
+    right: 0px;
+    top:50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.mainblock-footer {
+    background: #f0f0f0;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.mainblock-footer-button {
+    background: #ff8663;
+    color:#fff;
+    padding: 10px 15px;
+    width: 87px;
+    text-align: center;
+    border-radius: 12px;
+}

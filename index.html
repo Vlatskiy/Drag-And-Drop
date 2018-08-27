@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DragAndDrop</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="http://vk.com/js/api/openapi.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+</head>
+<body>
+
+        <div class="mainblock">
+            <div class="mainblock-header clearfix">
+                <span class="mainblock-header-caption">Выберите друзей</span>
+                <img class="mainblock-close-icon" src="img/close_icon.png">
+            </div>
+
+            <div class="mainblock-inputs-row clearfix">
+                <div class="mainblock-inputs-row-wrapper">
+                    <div class="input-ico-seacrh"></div>
+                    <input type="text" class="input-name" placeholder="Начните вводить имя друга">
+                </div>
+                <input type="text" class="input-other" placeholder="Название">
+            </div>
+
+            <div class="zone-caption-wrapper">
+                <div class="zone-caption">Ваши друзья</div>
+                <div class="zone-caption">Друзья в списке</div>
+            </div>
+
+
+            <div class="zone-wrapper">
+                <div class="mainblock-zone left-zone">
+                    <ul class="zone-list"></ul>
+
+                </div>
+
+                <div class="mainblock-zone right-zone">
+                    <ul class="zone-list">
+                        
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+            <div class="mainblock-footer">
+                <div class="mainblock-footer-button">Сохранить</div>
+            </div>
+        </div>
+        <script src="js/index.js"></script>
+</body>
+</html>
