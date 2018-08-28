@@ -118,3 +118,41 @@ rightZone.addEventListener('click', (e) => {
         leftZone.insertBefore(e.target.parentNode, leftZone.firstChild);
     }
 });
+
+//Функция поиска
+function existen(full=' ', chunk=' ') {
+    if (full.toLowerCase().indexOf(chunk.toLowerCase()) !== -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+//Функция рендеринга
+function rendering(arr, element) {
+    for (let key in arr) {
+        if (existen(arr[key].textContent, element.value)) {
+            for (let i=0; i< arr.length; i++) {
+                arr[key].parentNode.style.display = 'flex';
+            }
+        } else if(!(existen(arr[key].textContent, element.value))) {
+            for(let i = 0; i < arr.length; i++){
+                arr[key].parentNode.style.display = 'none';
+            }
+        }
+    }
+}
+
+//Поиск соответствия
+const left_input = document.querySelector('.input-name');
+const right_input = document.querySelector('.input-other');
+
+left_input.addEventListener('input', () => {
+	const left_array = document.querySelectorAll('.left-zone ul li span');		
+    rendering(left_array, left_input);
+});
+
+right_input.addEventListener('input', () => {
+	const right_array = document.querySelectorAll('.right-zone li span');		
+    rendering(right_array, right_input);
+});

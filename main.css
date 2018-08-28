@@ -87,6 +87,7 @@
     padding: 10px;
     display: flex;
     align-items: center;
+    border-bottom: 0.5px solid #f0f0f0;
 }
 
 .icon-rotate .zone-link-add {
